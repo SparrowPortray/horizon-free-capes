@@ -1,0 +1,6 @@
+/target
+/app/dist
+/server/.wrangler
+node_modules
+.DS_Store
+/release

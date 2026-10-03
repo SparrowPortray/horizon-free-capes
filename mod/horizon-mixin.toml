@@ -1,0 +1,46 @@
+# Drip's mod for Horizon. It draws the capes, wings, hats, pets and emotes that
+# Drip players wear, on your screen only. The Drip app copies this bundle into
+# <game folder>/horizon-native-mods/ and Horizon's launcher builds it into the game.
+#
+# Laid out like horizon-native-mod-template, for horizon-mixins d9c83d7
+# (0.6.0, plan schema 6). Targets marked "# verify" are raw function paths that
+# aren't in Horizon's named hook catalog; check them against the pinned source
+# when moving the pin.
+
+[mod]
+id = "drip"
+version = "1.1.0"
+
+[compatibility]
+horizon_revision = "ba6344a59cb9e755b730dcf02285fc0d33b97d3c" # Nightly 2026-10-30
+
+# Once a frame: sign in the first time, then keep the looks of the players
+# around you fresh (one batched lookup, cached for 5 minutes).
+[[injection]]
+id = "drip_frame"
+hook = "frame"
+hook_version = 1
+kind = "HEAD"
+helper = "cosmetics.rs"
+bindings = [{ name = "game", ty = "&mut crate::game::Game<'_>", value = "&mut *self" }]
+
+# After a player's model is drawn: their cape, wings, hat and pet, and the
+# pose of an emote they're playing.
+[[injection]]
+id = "drip_layers"
+target = "horizon_client::render::entity::player::render_player" # verify
+kind = "RETURN"
+helper = "cosmetics.rs"
+bindings = [
+  { name = "player", ty = "&crate::render::entity::player::PlayerRenderState", value = "state" }, # verify
+  { name = "draw", ty = "&mut crate::render::entity::ModelDraw<'_>", value = "draw" },            # verify
+]
+
+# The emote wheel: hold B, release on an emote.
+[[injection]]
+id = "drip_wheel"
+hook = "hud"
+hook_version = 1
+kind = "HEAD"
+helper = "emotes.rs"
+bindings = [{ name = "game", ty = "&mut crate::game::Game<'_>", value = "&mut *self" }]
