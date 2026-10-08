@@ -1,0 +1,7 @@
+[package]
+name = "drip-core"
+description = "Squad codes, cape fitting, the catalog and the sign-in hash behind Drip"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+rust-version.workspace = true

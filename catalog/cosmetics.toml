@@ -1,0 +1,307 @@
+# Every piece in Drip. All of them are free and all of them are original designs.
+# kind is one of: cape, wings, hat, pet, emote. Ids never change once released,
+# because the server stores what each player wears by id.
+
+# Capes: 10 by 16, drawn on the back
+
+[[item]]
+id = "ember"
+name = "Ember"
+kind = "cape"
+
+[[item]]
+id = "tide"
+name = "Tide"
+kind = "cape"
+
+[[item]]
+id = "static"
+name = "Static"
+kind = "cape"
+
+[[item]]
+id = "aurora"
+name = "Aurora"
+kind = "cape"
+new = true
+
+[[item]]
+id = "comet"
+name = "Comet"
+kind = "cape"
+
+[[item]]
+id = "glacier"
+name = "Glacier"
+kind = "cape"
+
+[[item]]
+id = "moss"
+name = "Moss"
+kind = "cape"
+
+[[item]]
+id = "ink"
+name = "Ink"
+kind = "cape"
+
+[[item]]
+id = "lantern"
+name = "Lantern"
+kind = "cape"
+
+[[item]]
+id = "dusk"
+name = "Dusk"
+kind = "cape"
+
+[[item]]
+id = "vapor"
+name = "Vapor"
+kind = "cape"
+
+[[item]]
+id = "flint"
+name = "Flint"
+kind = "cape"
+
+[[item]]
+id = "orchid"
+name = "Orchid"
+kind = "cape"
+
+[[item]]
+id = "signal"
+name = "Signal"
+kind = "cape"
+
+[[item]]
+id = "saffron"
+name = "Saffron"
+kind = "cape"
+
+[[item]]
+id = "nimbus"
+name = "Nimbus"
+kind = "cape"
+
+[[item]]
+id = "quartz"
+name = "Quartz"
+kind = "cape"
+
+[[item]]
+id = "cinder"
+name = "Cinder"
+kind = "cape"
+
+[[item]]
+id = "lagoon"
+name = "Lagoon"
+kind = "cape"
+
+[[item]]
+id = "velvet"
+name = "Velvet"
+kind = "cape"
+
+[[item]]
+id = "ridge"
+name = "Ridge"
+kind = "cape"
+
+[[item]]
+id = "prism"
+name = "Prism"
+kind = "cape"
+
+[[item]]
+id = "harbor"
+name = "Harbor"
+kind = "cape"
+
+[[item]]
+id = "founder"
+name = "Founder"
+kind = "cape"
+founder = true   # everyone who connects in the first month
+
+# Wings: worn over a cape or on their own
+
+[[item]]
+id = "moth"
+name = "Moth"
+kind = "wings"
+
+[[item]]
+id = "raven"
+name = "Raven"
+kind = "wings"
+
+[[item]]
+id = "glass"
+name = "Glass"
+kind = "wings"
+new = true
+
+[[item]]
+id = "petal"
+name = "Petal"
+kind = "wings"
+
+[[item]]
+id = "circuit"
+name = "Circuit"
+kind = "wings"
+
+[[item]]
+id = "frost"
+name = "Frost"
+kind = "wings"
+
+[[item]]
+id = "kite"
+name = "Kite"
+kind = "wings"
+
+[[item]]
+id = "vesper"
+name = "Vesper"
+kind = "wings"
+
+# Hats
+
+[[item]]
+id = "beanie"
+name = "Beanie"
+kind = "hat"
+
+[[item]]
+id = "bucket"
+name = "Bucket"
+kind = "hat"
+
+[[item]]
+id = "visor"
+name = "Visor"
+kind = "hat"
+
+[[item]]
+id = "crown"
+name = "Crown"
+kind = "hat"
+
+[[item]]
+id = "beret"
+name = "Beret"
+kind = "hat"
+
+[[item]]
+id = "headset"
+name = "Headset"
+kind = "hat"
+new = true
+
+[[item]]
+id = "antlers"
+name = "Antlers"
+kind = "hat"
+
+[[item]]
+id = "hood"
+name = "Hood"
+kind = "hat"
+
+[[item]]
+id = "topper"
+name = "Topper"
+kind = "hat"
+
+[[item]]
+id = "bandana"
+name = "Bandana"
+kind = "hat"
+
+[[item]]
+id = "halo"
+name = "Halo"
+kind = "hat"
+
+[[item]]
+id = "sprout"
+name = "Sprout"
+kind = "hat"
+
+# Pets: they sit on your left shoulder
+
+[[item]]
+id = "fox"
+name = "Fox"
+kind = "pet"
+
+[[item]]
+id = "owl"
+name = "Owl"
+kind = "pet"
+
+[[item]]
+id = "frog"
+name = "Frog"
+kind = "pet"
+
+[[item]]
+id = "crow"
+name = "Crow"
+kind = "pet"
+
+[[item]]
+id = "snail"
+name = "Snail"
+kind = "pet"
+
+[[item]]
+id = "hedgehog"
+name = "Hedgehog"
+kind = "pet"
+
+# Emotes: hold B in game, release on one
+
+[[item]]
+id = "wave"
+name = "Wave"
+kind = "emote"
+
+[[item]]
+id = "dance"
+name = "Dance"
+kind = "emote"
+
+[[item]]
+id = "sit"
+name = "Sit"
+kind = "emote"
+
+[[item]]
+id = "point"
+name = "Point"
+kind = "emote"
+
+[[item]]
+id = "clap"
+name = "Clap"
+kind = "emote"
+
+[[item]]
+id = "bow"
+name = "Bow"
+kind = "emote"
+
+[[item]]
+id = "facepalm"
+name = "Facepalm"
+kind = "emote"
+
+[[item]]
+id = "gg"
+name = "GG"
+kind = "emote"
