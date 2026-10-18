@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 64 64">
+<defs>
+<linearGradient id="bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#1c1c20"/><stop offset="1" stop-color="#0a0a0b"/></linearGradient>
+<radialGradient id="spot" cx="0.5" cy="0" r="0.75"><stop offset="0" stop-color="#ffffff" stop-opacity="0.14"/><stop offset="1" stop-color="#ffffff" stop-opacity="0"/></radialGradient>
+<linearGradient id="cloth" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#d9d9e0"/></linearGradient>
+</defs>
+<rect x="1" y="1" width="62" height="62" rx="14" fill="url(#bg)"/>
+<rect x="1" y="1" width="62" height="62" rx="14" fill="url(#spot)"/>
+<rect x="1.5" y="1.5" width="61" height="61" rx="13.5" fill="none" stroke="#ffffff" stroke-opacity="0.10"/>
+<g transform="translate(0 -1.5)">
+<path d="M24 12H27.6Q32 18.2 36.4 12H40Q43 12 43.6 15L50 42.5Q50.6 45.5 47.5 45.5V48A2.5 2.5 0 0 1 42.5 48V46Q39 44.8 36 45.2V50A3 3 0 0 1 30 50V45.4Q26 44.6 22 45.4V53A3 3 0 0 1 16 53V45.5Q13.4 45.5 14 42.5L20.4 15Q21 12 24 12Z" fill="url(#cloth)"/>
+<path d="M25.6 17.2L22.4 31.5" stroke="#3b6cff" stroke-width="2.8" stroke-linecap="round"/>
+</g>
+</svg>
