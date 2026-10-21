@@ -1,0 +1,29 @@
+# Drip's free server. To run your own mirror:
+#   npx wrangler d1 create drip                 # paste the id it prints below
+#   npx wrangler d1 execute drip --remote --file schema.sql
+#   npx wrangler r2 bucket create drip-capes
+#   npx wrangler r2 object put drip-capes/catalog/capes.png --file ../catalog/capes.png
+#   npx wrangler secret put SESSION_KEY         # any long random string
+#   npx wrangler deploy
+# Then add its address to "servers" in the mod's config/drip.toml.
+
+name = "drip"
+main = "worker.js"
+compatibility_date = "2026-10-01"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "drip"
+database_id = "" # from `wrangler d1 create drip`
+
+[[r2_buckets]]
+binding = "CAPES"
+bucket_name = "drip-capes"
+
+[durable_objects]
+bindings = [{ name = "ROOMS", class_name = "EmoteRoom" }]
+
+# Durable Objects on the free plan use the SQLite backend.
+[[migrations]]
+tag = "v1"
+new_sqlite_classes = ["EmoteRoom"]
