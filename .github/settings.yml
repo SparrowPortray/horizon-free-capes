@@ -1,0 +1,8 @@
+# The GitHub "About" box. The Settings app (github.com/apps/settings) applies this
+# on every push; without it, copy the description and topics in by hand.
+# Upload .github/social-preview.png in Settings -> General -> Social preview.
+repository:
+  name: horizon-free-capes
+  description: "Every cape, wing, hat, pet and emote in Drip is free: 24 capes, your own PNG or GIF cape, squad capes for your crew and emotes on the B wheel. Made for Horizon, no account."
+  topics: minecraft, horizon, capes, custom-capes, squad-capes, emotes, pixel-art, cosmetics, rust
+  has_wiki: false
